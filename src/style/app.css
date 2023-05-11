@@ -1,0 +1,65 @@
+@font-face {
+    font-family: regular;
+    src: url('../font/IRANSansX-Regular.ttf');
+}
+
+* {
+    font-family: regular;
+}
+
+body{
+    background-color: #000000;  
+}
+
+#number-dir {
+    direction: ltr;
+    height: 200px;
+}
+
+
+#navbarNavDropdown{
+    justify-content:center;
+}
+
+
+.navbar-toggler{
+    background-color: #6735EF;
+}
+
+.navbar-nav {
+    width: 40%;
+    justify-content:center;
+    padding: 40px 10px 0px 0px;
+    height: 10px;
+    border-radius: 30px;
+    margin-top: 50px;
+    font-size: 20px;
+    /* box-shadow: 0px 0px 20px 10px #000000 inset; */
+}
+
+.nav-link{
+    position: relative;
+    color: white;
+    margin: 0px 30px 0px 30px;
+}
+
+.nav-link:hover{
+
+    color:#6735EF;
+
+}
+
+.navbar{
+    background-image: url(../image/Untitled-1.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    height: 30vh;
+    justify-content:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+

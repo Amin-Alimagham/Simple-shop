@@ -1,0 +1,33 @@
+@font-face {
+    font-family: regular;
+    src: url('../font/IRANSansX-Regular.ttf');
+}
+
+#con-1 {
+    width: 500px;
+    background-color: #6735EF;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+
+#but-1:hover {
+    background-color: #0D6EFC;
+    color: white;
+}
+
+#s {
+    height: 10px;
+}
+
+.form-control{
+    font-size: 14px;
+}
+
+.form-select{
+    font-size: 14px;
+}
+
+.text-danger{
+    font-size: 14px;
+}

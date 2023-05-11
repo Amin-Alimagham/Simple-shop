@@ -1,0 +1,22 @@
+#r-pp {
+  height: 400px;
+}
+.search-box {
+  height: 80px;
+ width: 100%;
+}
+.search-box button {
+  
+}
+.search-box input {
+  width: 80%;
+}
+
+#img-pp {
+  /* width: 50%;
+    height: 80%;
+    margin-right: 100px; */
+  object-fit: contain;
+  max-width: 60%;
+  height: 60%;
+}
