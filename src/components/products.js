@@ -66,43 +66,41 @@ function Product() {
   }, [data]);
   return (
     <>
-      <div className="search-box w-50" >
+      <div className="search-box w-50">
         <input
-        className="w-50"
+          className="w-50"
           onChange={(inputText) => {
             setSearchValue(inputText.target.value);
           }}
           type="text"
           value={searchValue}
         />
-          <button onClick={searchCheck}>جستجو</button>
-   <select
-        className="w-100"
-        onChange={(e) => {
-          handelSort(e.target.value);
-        }}
-        name="selectList"
-        id="selectList"
-      >
-        <option value="all">همه</option>
-        <option value="electronics">وسایل الکترونیکی</option>
-        <option value="jewelery">جواهرات</option>
-        <option value="men's clothing">لباس مردانه</option>
-        <option value="women's clothing">لباس زنانه</option>
-      </select>
+        <button onClick={searchCheck}>جستجو</button>
+        <select
+          className="w-100"
+          onChange={(e) => {
+            handelSort(e.target.value);
+          }}
+          name="selectList"
+          id="selectList"
+        >
+          <option value="all">همه</option>
+          <option value="electronics">وسایل الکترونیکی</option>
+          <option value="jewelery">جواهرات</option>
+          <option value="men's clothing">لباس مردانه</option>
+          <option value="women's clothing">لباس زنانه</option>
+        </select>
       </div>
-      
+
       <section
         className="d-flex justify-content-start flex-wrap justify-content-around m-5"
         id="sec-pro"
       >
-
-      {sortData.slice((page - 1) * 9, page * 9).map((value, index) => {
-
+        {sortData.slice((page - 1) * 9, page * 9).map((value, index) => {
           return (
             <div
-            key={index}
-              className="card d-flex  justify-content-center m-4 p-3 border-dark-1 "
+              key={index}
+              className="card justify-content-center m-4 p-3 border-dark-1 "
               id="box-1"
             >
               <img
@@ -124,7 +122,7 @@ function Product() {
           );
         })}
       </section>
-    
+
       <Pagination style={{ display: "flex", justifyContent: "center" }}>
         <Pagination.First onClick={() => setPage(1)} />
         <Pagination.Prev

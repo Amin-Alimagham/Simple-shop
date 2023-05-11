@@ -3,15 +3,8 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import ReCAPTCHA from "react-google-recaptcha";
 import "../style/form.css";
-import { useDispatch, useSelector } from "react-redux";
 
 const Form = () => {
-  //   const mergedDispatch = useDispatch();
-  //   const { userDataList } = useSelector((response) => {
-  //     console.log(response.userDataState);
-  //     return response.userDataState;
-  //   });
-
   function addUser() {
     console.log("for store");
   }
@@ -31,13 +24,19 @@ const Form = () => {
         acc: "",
       }}
       validationSchema={yup.object({
-        firstName: yup.string("شامل عدد نباشد").required("پر نمودن این بخش الزامیست!"),
-        lastName: yup.string("شامل عدد نباشد").required("پر نمودن این بخش الزامیست!"),
+        firstName: yup
+          .string("شامل عدد نباشد")
+          .required("پر نمودن این بخش الزامیست!"),
+        lastName: yup
+          .string("شامل عدد نباشد")
+          .required("پر نمودن این بخش الزامیست!"),
         email: yup
           .string("شامل عدد نباشد")
           .email("فرمت ادرس الکترونیک را رعایت کنید")
           .required("پر نمودن این بخش الزامیست!"),
-        city: yup.string("شامل عدد نباشد").required("پر نمودن این بخش الزامیست!"),
+        city: yup
+          .string("شامل عدد نباشد")
+          .required("پر نمودن این بخش الزامیست!"),
         phoneNumber: yup
           .number("باید عدد باشد")
           .positive("باید مثبت باشد")
@@ -48,7 +47,9 @@ const Form = () => {
           .positive("مثبت باشد")
           .integer("اعشاری نباشد")
           .required("پر نمودن این بخش الزامیست!"),
-        gender: yup.string("شامل عدد نباشد").required("پر نمودن این بخش الزامیست!"),
+        gender: yup
+          .string("شامل عدد نباشد")
+          .required("پر نمودن این بخش الزامیست!"),
         acc: yup.boolean(),
       })}
       onSubmit={(values) => {
@@ -65,10 +66,8 @@ const Form = () => {
         isSubmitting,
       }) => (
         <form className="container" id="con-1" onSubmit={handleSubmit}>
-          {/* row-1 */}
           <div className="row mt-5">
             <div className="col g-2 p-3 mt-5">
-              {/* 1 */}
               <div>
                 <label className="form-label text-light pe-2">نام :</label>
                 <input
@@ -123,7 +122,6 @@ const Form = () => {
                   value={values.email}
                   onChange={handleChange}
                 />
-                {/* <div id="emailHelp" className="form-text">هرگز ادرس  الکترونیک خود را با کسی در میان نگذارید !</div> */}
                 {errors.email ? (
                   <span className="text-danger">{errors.email}</span>
                 ) : null}
@@ -147,7 +145,6 @@ const Form = () => {
               </div>
             </div>
           </div>
-          {/* row-3 */}
           <div className="row mt-3 ">
             <div className="col g-2 p-3">
               <div>
@@ -185,10 +182,8 @@ const Form = () => {
               </div>
             </div>
           </div>
-          {/* row-4 */}
           <div className="row ">
             <div className="col g-2 p-3">
-              {/* 6 */}
               <div>
                 <label className="form-label text-light pe-2 ">جنسیت :</label>
                 <select

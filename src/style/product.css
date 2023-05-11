@@ -1,94 +1,95 @@
 #img-product {
-    width: auto;
-    height: 300px;
+  width: auto;
+  height: 300px;
 }
 
 #box-1 {
-    width: 28%;
+  width: 28%;
 }
 
 #sec-pro {
-    height: auto;
-    color: white;
+  height: auto;
+  color: white;
 }
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-link {
-    background-color: #212529;
-    color: white;
+  background-color: #212529;
+  color: white;
 }
 
 .page-item {
-    background-color: #212529;
-    /* color: white; */
+  background-color: #212529;
 }
 
 .page-item:hover {
-    color: #212529;
+  color: #212529;
 }
 
 .page-link:hover {
-    color: #212529;
+  color: #212529;
 }
 
 a {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
-.card{
-    background-color: #6735EF;
-    border-radius: 30px;
+.card {
+  background-color: #6735ef;
+  border-radius: 30px;
 }
 
-.btn{
-    background-color: white;
-    color: #6735EF;
+.btn {
+  background-color: white;
+  color: #6735ef;
 }
 
-.search-box{
-    display: flex;
-    margin: 0 auto;
+.search-box {
+  display: flex;
+  margin: 0 auto;
 }
-.search-box select{
- height: 40px;
+.search-box select {
+  height: 40px;
   border-radius: 10px;
   padding-right: 10px;
-  color: #6735EF;}
+  color: #6735ef;
+}
 
-.search-box input{
- height: 40px;
-  border-radius: 10px;
+.search-box input {
+  height: 40px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   padding-right: 10px;
-  color: #6735EF;
+  color: #6735ef;
 }
-.search-box button{
- height: 40px;
- background-color: #6735EF;
- color: white
- ;
- border: none;
- border-radius: 10px;
- margin-left: 50px;
-}
-
-.page-link{
-    background-color: #6735EF;
-    border: none;
-    border-radius: 5px;
-    width: 50px;
-    text-align: center;
+.search-box button {
+  height: 40px;
+  background-color: #6735ef;
+  color: white;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-left: 50px;
 }
 
-.page-link:hover{
-    background-color: white;
-    color: #6735EF;
+.page-link {
+  background-color: #6735ef;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  text-align: center;
 }
 
-.page-item{
-    margin: 0px 5px;
+.page-link:hover {
+  background-color: white;
+  color: #6735ef;
+}
+
+.page-item {
+  margin: 0px 5px;
 }

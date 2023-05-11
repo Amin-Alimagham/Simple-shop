@@ -1,8 +1,27 @@
-.d-flex{
-    height: 300px;
+.d-flex {
+  height: 300px;
 }
-#footer{ 
+#footer {
+  margin-top: 200px;
+  background-color: #6735ef;
+  border-top-left-radius: 30px;
 }
-.footerimg{
-display:flex;
+
+#number-dir {
+  font-size: 20px;
+}
+
+.text-light {
+  margin-top: auto;
+  margin-right: 10px;
+}
+
+.text-light1 {
+  margin-top: auto;
+  margin-right: 100px;
+}
+
+span {
+  margin-top: auto;
+  margin-left: 30px;
 }
