@@ -50,7 +50,7 @@ function Product() {
       setSortData(data);
     } else {
       data.forEach((element) => {
-        if (element.category == event) {
+        if (element.category === event) {
           newData.push(element);
         }
       });

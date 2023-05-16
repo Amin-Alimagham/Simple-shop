@@ -1,0 +1,20 @@
+.card-item-wrapper {
+  width: 100%;
+  height: 90px;
+  padding-inline: 16px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardimage {
+  width: 60px;
+}
+.pcard {
+  padding-top: 25px;
+}
+.spancard {
+  height: 100%;
+  padding-top: 30px;
+}

@@ -3,7 +3,12 @@ import "../style/productPage.css";
 import CartContext from "../context";
 import * as mdIcons from "react-icons/md";
 import * as imIcons from "react-icons/im";
+import { MdPlusOne } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
+import { AddToCard } from "../store/Action";
 const ProductPage = () => {
+  const dispatch = useDispatch();
+  // const response = useSelector((response) => response);
   const { value } = useContext(CartContext);
   let [data, setData] = useState([]);
   useEffect(() => {
@@ -14,6 +19,10 @@ const ProductPage = () => {
     };
     fakeStore();
   });
+  function handleAddToCard() {
+    // dispatch(AddToCard(9));
+    dispatch(AddToCard(data.id));
+  }
   return (
     <>
       <div className="container bg-dark mt-5" id="con-pp">
@@ -29,17 +38,27 @@ const ProductPage = () => {
                 </p>
               </div>
             </div>
-            <div className="row h-25  text-dark m-2">
+            <div className="row h-25  text-dark m-2 ">
               <div className="col">
                 <p className="text-dark">
                   <imIcons.ImPriceTag /> : {data.price} $
                 </p>
               </div>
             </div>
-            <div className="row h-25 text-dark m-2">
+            <div className="row text-dark m-2">
               <div className="col">
                 <p>
                   <mdIcons.MdStarRate /> : 3.5
+                </p>
+              </div>
+            </div>
+            <div
+              onClick={handleAddToCard}
+              className="row h-25 text-dark my-2 add-to-card"
+            >
+              <div className="col">
+                <p>
+                  <MdPlusOne />
                 </p>
               </div>
             </div>

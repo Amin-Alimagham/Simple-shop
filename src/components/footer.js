@@ -24,7 +24,7 @@ const Footer = () => {
           <aiIcons.AiOutlineMail className="text-light" />
         </div>
         <div className="text-light" id="number-dir">
-          <span>gmail@mail.com</span>
+          <span>mail@gmail.com</span>
         </div>
       </div>
 

@@ -56,3 +56,9 @@ body {
   margin-right: auto;
   margin-bottom: 150px;
 }
+
+.card-number-box {
+  padding: 0px 10px;
+  background-color: #6735ef;
+  border-radius: 30px;
+}
